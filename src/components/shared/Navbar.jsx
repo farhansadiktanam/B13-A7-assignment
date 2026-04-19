@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, NavLink } from "react-router";
 import { IoHome } from "react-icons/io5";
+import { RiTimeLine } from "react-icons/ri";
+import { ImStatsDots } from "react-icons/im";
 
 const Navbar = () => {
   return (
@@ -30,6 +32,7 @@ const Navbar = () => {
                 `font-semibold btn ${isActive && "bg-[#244D3F] text-white "}`
               }
             >
+              <RiTimeLine />
               Timeline
             </NavLink>
             <NavLink
@@ -38,6 +41,7 @@ const Navbar = () => {
                 `font-semibold btn  ${isActive ? "bg-[#244D3F] text-white " : ""}`
               }
             >
+              <ImStatsDots />
               Stats
             </NavLink>
           </ul>
