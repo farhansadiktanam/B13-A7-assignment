@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="bg-base-200 shadow-sm ">
       <nav className="navbar container mx-auto ">
-        <div className="flex-1">
+        <div className="flex-1 min-w-sm">
           <Link to={"/"}>
             <h2 className="font-semibold text-3xl">
               Keen<span className="text-[#244D3F] ">Keeper</span>
