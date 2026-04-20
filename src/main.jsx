@@ -8,6 +8,7 @@ import RootLayout from "./layout/RootLayout.jsx";
 import Homepage from "./pages/homepage/Homepage.jsx";
 import Timeline from "./pages/timeline/Timeline.jsx";
 import Stats from "./pages/stats/Stats.jsx";
+import NotfoundPage from "./pages/notFoundPage/NotfoundPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,8 @@ const router = createBrowserRouter([
         Component: Stats,
       },
     ],
+
+    errorElement: <NotfoundPage />,
   },
 ]);
 
