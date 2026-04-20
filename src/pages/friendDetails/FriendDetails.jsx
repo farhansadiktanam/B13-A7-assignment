@@ -25,8 +25,7 @@ const FriendDetails = () => {
 
   return (
     <div className="flex flex-col lg:flex-row gap-10 items-start p-6 max-w-6xl mx-auto">
-      {/* Left Column: Profile Card */}
-      <div className="card bg-white shadow-xl border border-gray-100 min-w-[350px] sticky top-10">
+      <div className="card bg-white shadow-xl border border-gray-100 min-w-87.5 sticky top-10">
         <figure className="px-10 pt-10">
           <img
             src={expectedFriend.picture}
@@ -65,7 +64,6 @@ const FriendDetails = () => {
             {expectedFriend.bio}
           </p>
 
-          {/* Action Buttons */}
           <div className="flex flex-col w-full gap-2">
             <button className="btn btn-outline border-gray-300 text-gray-700 hover:bg-gray-50 flex gap-2">
               <HiOutlineBellSnooze className="text-lg" /> Snooze 2 Weeks
@@ -80,9 +78,7 @@ const FriendDetails = () => {
         </div>
       </div>
 
-      {/* Right Column: Details & Stats */}
       <div className="flex-1 w-full space-y-8">
-        {/* Stats Overview */}
         <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-center text-center gap-4">
           <div className="flex-1">
             <p className="text-[#244D3F] font-black text-4xl">
@@ -112,7 +108,6 @@ const FriendDetails = () => {
           </div>
         </div>
 
-        {/* Goals Section */}
         <div className="bg-gray-50 p-6 rounded-2xl flex justify-between items-center border border-gray-200/50">
           <div>
             <h3 className="font-bold text-gray-800">Relationship Goal</h3>
@@ -129,7 +124,6 @@ const FriendDetails = () => {
           </button>
         </div>
 
-        {/* Quick Check-in */}
         <div className="pt-4">
           <h3 className="text-[#244D3F] font-bold uppercase tracking-widest text-sm mb-6">
             Start a Conversation

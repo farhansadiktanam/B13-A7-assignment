@@ -25,7 +25,7 @@ const router = createBrowserRouter([
         Component: Timeline,
       },
       {
-        path: "/timeline/:id",
+        path: "/friendDetails/:id",
         Component: FriendDetails,
       },
       {

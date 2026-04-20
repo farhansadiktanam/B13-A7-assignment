@@ -1,11 +1,13 @@
 import React from "react";
+import useFriends from "../../hook/useFriends";
 
 const Stats = () => {
+  const { friends } = useFriends();
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 max-w-4xl mx-auto">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="text-center ">
-          <p className="text-3xl font-bold text-[#244D3F]">10</p>
+          <p className="text-3xl font-bold text-[#244D3F]">{friends.length}</p>
           <p className="text-sm text-gray-500 font-medium">Total Friends</p>
         </div>
         <div className="text-center border-l border-gray-100">
